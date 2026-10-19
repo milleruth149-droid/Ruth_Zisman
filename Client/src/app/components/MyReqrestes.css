@@ -1,0 +1,170 @@
+/* תמיכה ברספונסיביות +עיצוב בסיבי  */
+
+:host {
+  display: block;
+  direction: rtl;
+}
+
+h1 {
+  text-align: center;
+}
+
+.table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table-scroll:focus-visible {
+  outline: 3px solid #175cd3;
+  outline-offset: 2px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: right;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border: 1px solid #c7c7c7;
+  text-align: right;
+}
+
+th {
+  background: #f2f4f7;
+}
+
+.error-card {
+  max-width: 38rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #fecdca;
+  border-right: 5px solid #b42318;
+  border-radius: 0.75rem;
+  background: #fffbfa;
+  color: #7a271a;
+  box-shadow: 0 4px 12px rgb(16 24 40 / 8%);
+}
+
+.error-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.error-card p {
+  margin: 0 0 1.25rem;
+  line-height: 1.6;
+}
+
+.retry-button {
+  min-height: 2.75rem;
+  padding: 0.6rem 1rem;
+  border: 0;
+  border-radius: 0.45rem;
+  background: #b42318;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.retry-button:hover {
+  background: #912018;
+}
+
+.retry-button:focus-visible {
+  outline: 3px solid #fda29b;
+  outline-offset: 3px;
+}
+
+tr.action-required {
+  background: #fff4cc;
+  font-weight: 600;
+}
+
+tr.overdue {
+  box-shadow: inset -4px 0 #b42318;
+}
+
+tr.overdue td,
+tr.overdue td span {
+  color: #b42318;
+}
+
+.action-required-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.action-required-label {
+  font-weight: 700;
+}
+
+.file-selection-note {
+  display: block;
+  margin-top: 0.4rem;
+  color: #475467;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.upload-button {
+  border: 0;
+  border-radius: 0.4rem;
+  padding: 0.5rem 0.8rem;
+  background: #175cd3;
+  color: #fff;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 120ms ease, box-shadow 120ms ease;
+}
+
+.upload-button:hover {
+  background: #1849a9;
+}
+
+.upload-button:focus-visible {
+  outline: 3px solid #84adff;
+  outline-offset: 2px;
+}
+
+.overdue-indicator {
+  color: #b42318;
+  font-weight: 700;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.selected-files {
+  display: block;
+  margin-top: 0.35rem;
+  overflow-wrap: anywhere;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  th,
+  td {
+    padding: 0.5rem;
+    white-space: nowrap;
+  }
+}

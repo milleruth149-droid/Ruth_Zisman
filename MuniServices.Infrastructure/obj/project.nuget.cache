@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "pJB6W6wbMV8=",
+  "success": true,
+  "projectFilePath": "/workspaces/Ruth_Zisman/MuniServices.Infrastructure/MuniServices.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "/home/codespace/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.12/microsoft.extensions.dependencyinjection.abstractions.10.0.12.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.12/microsoft.extensions.logging.abstractions.10.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

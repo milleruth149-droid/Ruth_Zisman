@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "MuniServices.Core/1.0.0": {
+        "runtime": {
+          "MuniServices.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MuniServices.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

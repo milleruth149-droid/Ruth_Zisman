@@ -1,0 +1,16 @@
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/bin/Release/net10.0/MuniServices.Infrastructure.deps.json
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/bin/Release/net10.0/MuniServices.Infrastructure.dll
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/bin/Release/net10.0/MuniServices.Infrastructure.pdb
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/bin/Release/net10.0/MuniServices.Core.dll
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/bin/Release/net10.0/MuniServices.Core.pdb
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/obj/Release/net10.0/MuniServices.Infrastructure.csproj.AssemblyReference.cache
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/obj/Release/net10.0/MuniServices.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/obj/Release/net10.0/MuniServices.Infrastructure.AssemblyInfoInputs.cache
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/obj/Release/net10.0/MuniServices.Infrastructure.AssemblyInfo.cs
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/obj/Release/net10.0/MuniServices.Infrastructure.csproj.CoreCompileInputs.cache
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/obj/Release/net10.0/MuniServices.Infrastructure.sourcelink.json
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/obj/Release/net10.0/MuniServ.F9BFB28F.Up2Date
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/obj/Release/net10.0/MuniServices.Infrastructure.dll
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/obj/Release/net10.0/refint/MuniServices.Infrastructure.dll
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/obj/Release/net10.0/MuniServices.Infrastructure.pdb
+/workspaces/Ruth_Zisman/MuniServices.Infrastructure/obj/Release/net10.0/ref/MuniServices.Infrastructure.dll

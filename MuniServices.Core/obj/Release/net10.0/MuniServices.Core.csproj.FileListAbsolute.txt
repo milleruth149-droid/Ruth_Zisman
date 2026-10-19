@@ -1,0 +1,12 @@
+/workspaces/Ruth_Zisman/MuniServices.Core/bin/Release/net10.0/MuniServices.Core.deps.json
+/workspaces/Ruth_Zisman/MuniServices.Core/bin/Release/net10.0/MuniServices.Core.dll
+/workspaces/Ruth_Zisman/MuniServices.Core/bin/Release/net10.0/MuniServices.Core.pdb
+/workspaces/Ruth_Zisman/MuniServices.Core/obj/Release/net10.0/MuniServices.Core.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Ruth_Zisman/MuniServices.Core/obj/Release/net10.0/MuniServices.Core.AssemblyInfoInputs.cache
+/workspaces/Ruth_Zisman/MuniServices.Core/obj/Release/net10.0/MuniServices.Core.AssemblyInfo.cs
+/workspaces/Ruth_Zisman/MuniServices.Core/obj/Release/net10.0/MuniServices.Core.csproj.CoreCompileInputs.cache
+/workspaces/Ruth_Zisman/MuniServices.Core/obj/Release/net10.0/MuniServices.Core.sourcelink.json
+/workspaces/Ruth_Zisman/MuniServices.Core/obj/Release/net10.0/MuniServices.Core.dll
+/workspaces/Ruth_Zisman/MuniServices.Core/obj/Release/net10.0/refint/MuniServices.Core.dll
+/workspaces/Ruth_Zisman/MuniServices.Core/obj/Release/net10.0/MuniServices.Core.pdb
+/workspaces/Ruth_Zisman/MuniServices.Core/obj/Release/net10.0/ref/MuniServices.Core.dll

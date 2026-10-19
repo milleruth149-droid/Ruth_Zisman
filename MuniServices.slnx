@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="MuniServices.Api/MuniServices.Api.csproj" />
+  <Project Path="MuniServices.Core/MuniServices.Core.csproj" />
+  <Project Path="MuniServices.Infrastructure/MuniServices.Infrastructure.csproj" />
+  <Project Path="MuniServices.Tests/MuniServices.Tests.csproj" />
+</Solution>

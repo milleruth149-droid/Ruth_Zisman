@@ -1,0 +1,105 @@
+<!--  משימה 6 צד לקוח מציג את רשימת הבקשות -->
+<h1>רשימת הבקשות שלי</h1>
+
+@if (loading) {
+  <p role="status">טוען את רשימת הבקשות...</p>
+} 
+
+@else if (errorMessage) {
+  <!--משימה 6.4 אם השירות לא זמין מוצגת הודעת שגיאה  עם אפשרות לנסות שוב -->
+  <section class="error-card" role="alert" aria-labelledby="error-title">
+    <h2 id="error-title">לא הצלחנו לטעון את הבקשות</h2>
+    <p>{{ errorMessage }}</p>
+    <button class="retry-button" type="button" (click)="loadRequest()">
+      נסו שוב
+    </button>
+  </section>
+}
+
+@else if (requests.length > 0) {
+  <div
+    class="table-scroll"
+    role="region"
+    aria-label="טבלת הבקשות; במסך צר ניתן לגלול אופקית"
+    tabindex="0"
+  >
+<!--מציג את רשימת הבקשות בטבלה כשהנתונים נטענו. -->
+    <table>
+      <caption class="visually-hidden">רשימת הבקשות שהוגשו</caption>
+      <thead>
+        <tr>
+          <th scope="col">מספר בקשה</th>
+          <th scope="col">שם השירות</th>
+          <th scope="col">שם הרשות</th>
+          <th scope="col">סטטוס</th>
+          <th scope="col">נדרשת פעולה</th>
+          <th scope="col">חריגה ממועד הטיפול</th>
+          <th scope="col">תאריך הגשה</th>
+          <th scope="col">עדכון אחרון</th>
+        </tr>
+      </thead>
+
+
+      <tbody>
+        @for (req of requests; track req.requestId) {
+          <tr
+            [class.action-required]="req.actionRequired"
+            [class.overdue]="req.isOverdue"
+          >
+            <td>{{ req.requestId }}</td>
+            <td>{{ req.serviceName }}</td>
+            <td>{{ req.authorityName }}</td>
+            <td>{{ req.status }}</td>
+            <td>
+              <!--  6.1 בקשה שדורשת פעולה מסומנת עם קריאה לפעולה 
+                אני הגדרתי כפתור שעונה על המשימה של עם הקריאה לפעולה שמוכן להעלאת קבצים  -->
+              @if (req.actionRequired) {
+                <div class="action-required-content">
+                  <span class="action-required-label">נדרשת פעולה</span>
+                  <button
+                    class="upload-button"
+                    type="button"
+                    (click)="filePicker.click()"
+                  >
+                    בחירת קבצים
+                  </button>
+                  <input
+                    #filePicker
+                    class="visually-hidden"
+                    type="file"
+                    multiple
+                    (change)="onFilesSelected(req.requestId, $event)"
+                    [attr.aria-label]="'בחירת קבצים עבור בקשה ' + req.requestId"
+                  />
+                </div>
+              <!-- מידע למשתמש שזה לא באמת יעביר לשרת את הקובץ שמעלה -->
+                <span class="file-selection-note">
+                  להדגמה בלבד: בחירת קבצים בלבד, ללא העלאה לשרת.
+                </span>
+                <span class="selected-files" aria-live="polite" aria-atomic="true">
+                  @if (selectedFilesByRequest[req.requestId]?.length) {
+                    נבחרו קבצים: {{ selectedFilesByRequest[req.requestId].join(', ') }}.
+                    הקבצים לא הועלו לשרת.
+                  }
+                </span>
+              } @else {
+                <span>לא</span>
+              }
+            </td>
+            <!-- משימה 6.2  . בקשה שחרגה מזמן הטיפול מסומנת. -->
+            <td>
+              <span [class.overdue-indicator]="req.isOverdue">
+                {{ req.isOverdue ? 'כן' : 'לא' }}
+              </span>
+            </td>
+            <td>{{ req.submittedAt }}</td>
+            <td>{{ req.lastUpdate }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+  <!-- משימה 6.3 אם אין בקשות -->
+} @else {
+  <p>עדיין לא הגשת בקשות.</p>
+}

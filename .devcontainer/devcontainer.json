@@ -1,0 +1,15 @@
+//עבור בעיה שהיתה לי עפ הפורטים
+{
+  "name": "C# (.NET)",
+  "forwardPorts": [5225, 4200],
+  "portsAttributes": {
+    "5225": {
+      "label": "MuniServices API",
+      "visibility": "public"
+    },
+    "4200": {
+      "label": "Angular Client",
+      "visibility": "public"
+    }
+  }
+}
