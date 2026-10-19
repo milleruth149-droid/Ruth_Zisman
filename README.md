@@ -89,3 +89,9 @@ location.reload();
 
 // אם יש בעיה בהרצה gh codespace ports visibility 4200:public -c "$CODESPACE_NAME"
 להפוך ports לPublic 
+
+
+
+
+ארכיטקטורה
+הפרויקט בנוי בשכבות. MuniServices.Api חושף את נקודת הקצה המאובטחת ומטפל בבקשות HTTP; MuniServices.Core מכיל את המודלים והממשקים; ו־MuniServices.Infrastructure מכיל את הלוגיקה העסקית ואת מימושי הגישה לנתונים. התלויות בין השכבות מנוהלות באמצעות הזרקת תלויות (Dependency Injection), כך שניתן להחליף את מימושי הדמה בחיבורים אמיתיים למערכת הטפסים ול־ServiceCatalog. צד הלקוח, שנבנה ב־Angular, קורא ל־API ומציג את הבקשות לתושב.
